@@ -1,6 +1,12 @@
 # Segmentation Code
 
-I've made some headway in the segmentation code. I've effectively copied much of the U-Net TGS Blob detection code and am using that for starting. I've changed activation from elu to relu and have changed datatypes and size of certain arrays used in code to properly match the data. I've gotten it properly to load and convolve all neccessary data, but still need to add code to perform analysis. Currently Adam Conrad's hard_dice metric is being used. I've also separated the data in Samos such that 20 images are being used for training and 10 images are being used for testing. Take a look, as I'm hoping to generate some basic results from this code over the weekend. Let me know what you think and if there is anything that needs to be changed.
+I've made some headway in the segmentation code. 
+
+I've effectively copied much of the U-Net TGS Blob detection code (see Build U-Net Moddel in code1.py) and am using that for starting. 
+
+I've changed activation from elu to relu and have changed datatypes and size of certain arrays used in code to properly match the data. I've gotten it properly to load and convolve all neccessary data, but still need to add code to perform analysis. The code is also currently configured for my laptop, with configurations for Samos being present but commented out. 
+
+Currently Adam Conrad's hard_dice metric is being used. I've also separated the data in Samos such that 20 images are being used for training and 10 images are being used for testing. Take a look, as I'm hoping to generate some basic results from this code over the weekend. Let me know what you think and if there is anything that needs to be changed.
 
 
 -----------------------------------------------------------
